@@ -34,7 +34,9 @@ cy.get('[data-cy=talk]')
   })
   .find('.html5-video-player').should('be.visible')
 // main sections links
-cy.contains('li', 'Lint pyramid').should('be.visible')
+;['Lint pyramid', 'Tests and plugins', 'Code coverage'].forEach(section => {
+  cy.contains('li', section).should('be.visible')
+})
 ```
 
 <!-- fiddle-end -->
