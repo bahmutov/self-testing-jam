@@ -1,0 +1,9 @@
+{
+  "integrationFolder": ".",
+  "testFiles": "*.md",
+  "fixturesFolder": false,
+  "supportFile": false,
+  "baseUrl": "http://localhost:8080",
+  "chromeWebSecurity": false,
+  "viewportHeight": 1000
+}

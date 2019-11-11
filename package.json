@@ -1,0 +1,31 @@
+{
+  "name": "self-testing-jam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example static page built using Vuepress that tests itself using Cypress tests embedded in its Markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "start": "vuepress dev",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "build": "vuepress build",
+    "dev": "start-test 8080 cy:open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/self-testing-jam.git"
+  },
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/self-testing-jam/issues"
+  },
+  "homepage": "https://github.com/bahmutov/self-testing-jam#readme",
+  "devDependencies": {
+    "@cypress/fiddle": "1.4.0",
+    "cypress": "3.6.0",
+    "start-server-and-test": "1.10.6",
+    "vuepress": "1.2.0"
+  }
+}
